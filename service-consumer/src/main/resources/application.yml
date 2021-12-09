@@ -1,0 +1,11 @@
+server:
+  port: 8000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:pwd@peer1:8761/eureka/
+    tls:
+      enabled: false
+spring:
+  application:
+    name: service-consumer

@@ -1,0 +1,17 @@
+server:
+  port: 9000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:pwd@peer1:8761/eureka/
+    tls:
+      enabled: false
+spring:
+  application:
+    name: authorization-server
+logging:
+  level:
+    root: INFO
+    org.springframework.web: trace
+    org.springframework.security: debug
+    org.springframework.security.oauth2: debug

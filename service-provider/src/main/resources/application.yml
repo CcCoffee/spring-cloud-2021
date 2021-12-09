@@ -1,0 +1,16 @@
+server:
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:pwd@localhost:8761/eureka/
+    tls:
+      enabled: false
+spring:
+  application:
+    name: service-provider
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://auth-server:9000
