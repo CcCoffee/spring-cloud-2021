@@ -16,3 +16,7 @@ spring:
             - Path=/service-provider/**
   application:
     name: api-gateway
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
